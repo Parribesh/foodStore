@@ -1,0 +1,273 @@
+body{
+  background-color: #C77826;
+  margin: 25px;
+  text-align: inline-block;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.shopping-cart{
+  text-align: center;
+}
+
+#Title{
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+}
+
+#img{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+a{
+  color: white;
+}
+
+.jumbotron {
+	background-color: white;
+}
+.ctrt{
+  text-align: center;
+} 
+.card {
+			width: 80%;
+			margin: 0 auto;
+      overflow: auto;
+			/* centers a div container */
+      background-color: #F0E68C;
+    	}
+.card-body {
+			justify-content: center;
+      overflow: auto;
+      font-family: 'Fjalla One', sans-serif;
+      
+			/* centers a div container */
+}
+legend{
+      background-color: beige;
+}
+fieldset{
+      display: inline-block;
+}
+
+header{
+  display:flex;
+  background-color: #E04006;
+  margin: 0;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 25px;
+  border-bottom: 30px;
+  text-align: center;
+}
+
+  #nav{
+  text-align: center;
+  padding: 0px;
+  list-style-type: none;
+  margin-top: 5px;
+  margin-right:2px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+#nav a{
+  margin: -2px;
+  padding: 10px 20px ;
+  color: #333;
+  
+}
+.elements{
+  display:inline;
+}
+
+.container{
+  display: flex;
+  text-align: center;
+  break-after: always; /* New syntax */
+}
+
+.content{
+  margin-left: 50px;
+  justify-content: center;
+}
+
+
+#row{
+  text-align: center;
+}
+
+hr{
+   border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+#Photos{
+text-align: center;
+border-radius: 50%;
+
+}
+
+#foot{
+  mix-blend-mode: multiply;
+   width: 180px;
+  height: 130px;
+  border-radius: 50%;
+  opacity: 0.5;
+  
+  
+}
+
+#foot1{
+  margin-top: 50px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+#ApiIntro{
+  text-align: center;
+}
+
+#UserInput{
+  text-align: center;
+}
+
+#para{
+  color: white;
+  margin: auto;
+  width: 80%;
+  border: 3px solid white;
+  background-color: gray ;
+  padding: 10px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+#ctr{
+  text-align: center;
+}
+
+.ctrr{
+   text-align: center;
+}
+
+
+.align{
+  margin: auto;
+  text-align: center;
+}
+
+.but{
+  background-color: white;
+}
+
+#dataI{
+  width: 200px;
+  height: 200px;
+}
+
+a:hover {
+  background-color: aliceblue;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.active{
+  background-color: rgb(190, 190, 206);
+  text-decoration: none;
+}
+
+a.visited{
+  text-decoration: none;
+}
+.col-25, .col-50, .col-75 {
+  padding: 0 16px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; 
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; 
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; 
+  flex: 75%;
+}
+
+.container {
+  background-color: aliceblue;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: blue;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.button:hover{
+   background-color: blue;
+   opacity: 0.8 ;
+}

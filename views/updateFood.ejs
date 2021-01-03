@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+<body>
+
+	<header>
+		<h1 class="jumbotron"> Update Food</h1>
+	</header>
+
+<div class="card">
+		<div class="card-body">
+
+  <h1> Admin Section </h1>
+  <h2> Updating Food </h2>
+  
+      <form action="/updateFood">
+        <input type="hidden" name="foodID" value="<%= rows[0].foodID %>" >
+
+        Food Name:
+          <input type="text" name="foodName" value= "<%=rows[0].foodName%>"><br>
+
+        Img Link:
+          <input type="text" name="imgLink" value="<%=rows[0].imgLink%>"><br>
+          <br>
+
+        <button>Update Food</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

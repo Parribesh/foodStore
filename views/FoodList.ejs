@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+<body>
+<header>
+		<h1 class="jumbotron"> OUR FOODS </h1>
+</header>
+  <div class="card">
+    <div class = "card-body">
+      <div class = "container">
+        <% foods.forEach(function(food){ %>
+          <div class = "elements">
+          <img src = "<%=food.imgLink%>" id="dataI">
+          <%=food.foodName%><br>
+          <form action="/FoodList">
+          <button type="submit"  name = "item" value="<%=food.foodID%>">Add this to Cart<br> </button>
+      </form>
+          <hr>
+          </div>
+        <% }) %>
+  
+     </div>
+    </div>
+</div>
+</body>
+</html>

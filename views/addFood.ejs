@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+<body>
+  <h1> Admin Section </h1>
+  <h2> Adding a new Food </h2>
+
+  <form action="/addFood">
+
+    foodName:
+    <input type="text" name="foodName"><br>
+
+    imgLink:
+    <input type="text" name="imgLink"><br>
+
+     <br>
+    <button value="1" name="formSubmitted"> Add a new Food </button>
+  </form>
+
+  <% if(foodAdded) { %>  
+  
+      <h3> Food has been Recorded! </h3>
+
+  <%    } %>
+
+
+</body>
+</html>

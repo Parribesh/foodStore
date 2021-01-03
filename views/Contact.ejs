@@ -1,0 +1,42 @@
+<%- include("partials/header.ejs") %>
+<body>
+
+	<header>
+		<h1 class="jumbotron"> Contact Us</h1>
+	</header>
+
+<div class="card">
+		<div class="card-body">
+  <form action="/contact">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <br>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <br>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">California</option>
+      <option value="canada">New York</option>
+      <option value="usa">Texas</option>
+    </select>
+    <br>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write Something..." style="height:200px"></textarea>
+    <br>
+     </form>
+ 
+</div>
+</div>
+
+ <div class="card">
+		<div class="card-body">
+      <form action="/">
+        <button id="#submit" onclick="submitClick()">Submit</button>
+      </form>
+  </div>
+  </div>    
+</body>
+</html>

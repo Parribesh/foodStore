@@ -1,0 +1,57 @@
+
+<%- include("partials/header.ejs") %>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+<form id="shopping-cart" action="/Cart">
+<header>
+		<h1 class="jumbotron"> Your Cart</h1>
+	</header>
+  <div class="card">
+		<div class="card-body">
+
+    <table class="shopping-cart" style="width:100%">
+        <thead>
+            <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Price</th>
+            </tr>
+             <tr>
+             <% for(let i=0; i<rows.length; i++) { %>
+             <% rows[i].forEach(function(row) { %>
+                <td id = "item"><%= row.foodName %> %></td>
+                <td class ="quantity"><input type="text" name="quantity" id="update-cart" placeholder="Qty"></input></td>
+                
+                <%var stotal = 10;%>
+                <td class ="price1"><%=stotal%></td>
+                
+                <% }); %>
+                </tr>
+               <% }; %> 
+             
+        </thead>
+        <tbody></tbody>
+    </table>
+    <%var total = rows.length*10%>
+    <p id="sub-total">
+        <strong>Sub Total</strong>:<span id="stotal"> $<%=total%>.00 </span>
+    </p>
+    <ul id="shopping-cart-actions">
+        <li>
+            <input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+        </li>
+       <li>
+           <a href="/destroy" class="btn">Empty Cart</a>
+        </li>
+        <li>
+            <a href="/FoodList" class="btn">Continue Shopping</a>
+        </li>
+        <li>
+            <a href="/Checkout" class="btn">Go To Checkout</a>
+        </li>
+    </ul>
+</form>
+</div>
+</div>
+</body>
+</html>

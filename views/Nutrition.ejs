@@ -1,0 +1,100 @@
+<%- include("partials/header.ejs") %>
+<body>
+<header>
+		<h1 class="jumbotron"> Nutrition Section </h1>
+</header>
+  <div class="card">
+		<div class="card-body">
+
+<h3 id="Title"> Prime Concern Foods </h3>
+<hr>
+<div id="ApiIntro">
+  <p>
+    Curious on the nutrient facts on some food you're wanting to cook? Don't be afraid look them up here with our intigraded API with the assistance of <a href="https://calorieninjas.com/index">CalorieNinjas</a>
+  </p>
+</div>
+
+<div id="UserInput">
+  <input type="text" id="fInput" name="Food" placeholder="Input any Food">
+  <button id="in" onclick="retrieveData()"> Search!</button>
+  <!--TABLE FOR RETRIEVED API INFORMATION BASED ON USER INPUT-->
+  <br>
+  <br>
+<table class="table table-dark">
+  <thead hidden="true" id="ta">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Sugar (G)</th>
+      <th scope="col">Fiber (G)</th>
+      <th scope="col">Serving Size (G)</th>
+      <th scope="col">Sodium (Mg)</th>
+      <th scope="col">potassium (Mg)</th>
+      <th scope="col">Fat Saturated (G)</th>
+      <th scope="col">Fat Total (G)</th>
+      <th scope="col">Calories</th>
+      <th scope="col">Cholesterol (Mg)</th>
+      <th scope="col">Protien (G)</th>
+      <th scope="col">Carbohydrates Total (G)</th>
+    </tr>
+  </thead>
+  <tbody hidden="true" id = "tab">
+    <tr id="">
+      <th scope="row">1</th>
+      <td id="t1"></td>
+      <td id="t2"></td>
+      <td id="t3"></td>
+      <td id="t4"></td>
+      <td id="t5"></td>
+      <td id="t6"></td>
+      <td id="t7"></td>
+      <td id="t8"></td>
+      <td id="t9"></td>
+      <td id="t10"></td>
+      <td id="t11"></td>
+      <td id="t12"></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div id="rMeal" hidden="true">
+  <p id="strArea"> </p>
+  <br>
+  <p id="strCategory"> </p>
+  <br>
+  <p id="strI1"> </p>
+  <br>
+  <p id="strI2"> </p>
+  <br>
+  <p id="strI3"> </p>
+  <br>
+  <p id="strI4"> </p>
+  <br>
+  <p id="strI5"> </p>
+  <br>
+  <p id="strI6"> </p>
+  <br>
+  <p id="strI7"> </p>
+  <br>
+  <p id="strI8"> </p>
+  <br>
+  <p id="strI9"> </p>
+  <br>
+  <p id="strI10"> </p>
+  <br>
+  <p id="strP"> </p>
+  <br>
+  <p id="strM"> </p>
+  <br>
+  <p id="strT"> </p>
+  <br>
+  
+
+</div>
+<button onclick="retrieveRandomMeal()">Click to Find a Random Recipe! </button>
+</div>
+</div>
+</body>
+
+</html>
